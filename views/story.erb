@@ -1,0 +1,14 @@
+test = "The [noun] liked to [verb] the [adjective] mob boss every night."
+arr = ["douchebag", "jump", "poopy"]
+
+test = test.to_a
+
+test.each do |x|
+
+end
+
+test = test.sub('[noun]', arr[0])
+test = test.sub('[verb]', arr[1])
+test = test.sub('[adjective]', arr[2])
+
+puts test
